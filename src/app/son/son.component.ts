@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Employee } from 'src/model/Employee.model';
 
 @Component({
   selector: 'app-son',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./son.component.scss']
 })
 export class SonComponent {
-
+  @Input() employee!:Employee;
 }
