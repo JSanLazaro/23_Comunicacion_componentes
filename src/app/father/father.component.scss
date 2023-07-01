@@ -1,9 +1,42 @@
+.head{
+  align-content: space-around;
+}
 .marco {
-  border: 3px solid blue;
+  border: 3px solid black;
+  border-radius: 5%;
+  background-color: darkslategray;
+  color: white;
 }
 .employees{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-content: center;
+}
+.btn{
+  background-color: black;
+  color: white;
+}
+.end{
+  margin: auto 0 0;
+  border: 3px solid white;
+}
+.buttoncontainer{
+  display: flex;
+  flex-direction: row-reverse;
+  
+}
+.data{
+  background-color: lightgrey;
+  border: 2px solid rgb(190, 189, 189);
+  border-radius: 5%;
+}
+label{
+  width: 100%;
+}
+input{
+  width: 100%;
+}
+.form-group{
+  width: 95%;
 }

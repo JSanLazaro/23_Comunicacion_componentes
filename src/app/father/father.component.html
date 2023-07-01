@@ -1,5 +1,5 @@
-<div class="row p-2">
-  <div class="container p-1 mx-3 marco col-5">
+<div class="head row p-2">
+  <div class="container p-1 mx-3 marco col-6">
     <form >      
       <div class="form-group" action="">
         <label for="name"
@@ -44,14 +44,17 @@
           <input type="number" name="salary" id="field_salary" ngModel #vSalary [(ngModel)]="fSalary"
         /></label>
       </div>
-      <button (click)="addEmployee()" type="button">añadir</button>
+      <div class="buttoncontainer">
+        <button class="btn end"(click)="addEmployee()" type="button">añadir</button>
+      </div>
+      
     </form>
   </div>
-  <div class="container col-5">    
-    Name: {{fName}}
-    LastName: {{fLastName}}
-    Position: {{fPosition}}
-    Salary: {{fSalary}}
+  <div class="data container col-4"> 
+    <p>Name: {{fName}}</p>   
+    <p>LastName: {{fLastName}}</p>
+    <p>Position: {{fPosition}}</p>
+    <p>Salary: {{fSalary}}</p>    
   </div>
   
 </div>

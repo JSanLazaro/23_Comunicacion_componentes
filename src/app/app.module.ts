@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { FatherComponent } from './father/father.component';
 import { SonComponent } from './son/son.component';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,8 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
